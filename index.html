@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinemauz</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <!--Navbar section-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5">
+        <div class="container container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" alt="" width="100" height="50" class="d-inline-block align-text-top">
+                CINEMAS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-5">
+                        <a class="nav-link active nav-menu__custom" aria-current="page" href="#">Films</a>
+                    </li>
+                    <li class="nav-item ms-3 ">
+                        <a class="nav-link nav-menu__custom" href="#">Series</a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle nav-menu__custom" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cartoons
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-menu__custom" href="#">Latest</a></li>
+                            <li><a class="dropdown-item nav-menu__custom" href="#">Camedy action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item nav-menu__custom" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav-menu__custom" href="#" tabindex="-1" aria-disabled="true">Collections</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning nav-menu__custom ps-3 pe-3" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar section fineshed-->
+
+    <!--Main page section-->
+    <section id="main-page" class="main-page">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-sm-10 col-md-8 col-xl-6 onset-sm-2">
+                    <h1 class="main-page__title-custom">
+                        Kong: Skull Island
+                    </h1>
+
+                    <p class="main-page__description">
+                        The film takes the viewer to the 70s of the last century. The protagonist organizes an
+                        expedition to the
+                        Skull island, always covered in fog, on which King Kong was once caught to find the missing
+                        brother and
+                        some mysterious substance. During...
+                    </p>
+                    <div class="gap-2 mx-auto mt-5">
+                        <button type="button" class="btn btn-main__watch-custom btn-lg me-5 ps-4 pe-4">Watch
+                            Now
+                            Online</button>
+                        <button type="button" class="btn btn-main__down-custom btn-lg ps-4 pe-4">Order Seat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Main page section fineshed-->
+
+    <!--Films page section-->
+    <section class="films mt-5 mb-5">
+        <div class="container container-fluid">
+            <h1 id="title-custom" class="mb-0">Films</h1>
+            <hr style="color: #F18128; border: 2px solid #F18128; width: 8%;">
+            <div class="row">
+                <div class="col-sm-3 mt-5 mb-5 films-img__custom">
+                    <i class="fas fa-play"></i>
+                    <button type="button" class="btn btn-outline-light btn-films__custom ps-4 pe-4">2:11:33</button>
+                    <h3>Black Panther</h3>
+                    <p>At first glance, you can decide that Wakanda is an ordinary territory of wild Africa, but this is
+                        not so. Here, in the bowels of the desert lands, there are hidden deposits of a unique metal
+                        capable of absorbing...</p>
+                </div>
+                <div class="col-sm-3 mt-5 mb-5 films-img__custom1">
+                    <i class="fas fa-play "></i>
+                    <button type="button" class="btn btn-outline-light btn-films__custom ps-4 pe-4">2:11:33</button>
+                    <h3>The Dark Knight</h3>
+                    <p>One cunning American, from his student years, had been selling drugs, and now he came up with a
+                        scheme of illegal enrichment using the estates of an impoverished English aristocracy and made a
+                        very good fortune on ...</p>
+                    </p>
+                </div>
+                <div class="col-sm-3 mt-5 mb-5 films-img__custom2">
+                    <i class="fas fa-play "></i>
+                    <button type="button" class="btn btn-outline-light btn-films__custom ps-4 pe-4">2:11:33</button>
+                    <h3>The Gentelmen</h3>
+                    <p>Batman raises stakes in the war on crime. With the help of Lieutenant Jim Gordon and Attorney
+                        Harvey Dent, he intends to clear the streets of crime that is poisoning the city. The
+                        cooperation is effective, but soon they...</p>
+                </div>
+                <div class="col-sm-3 mt-5 mb-5 films-img__custom3">
+                    <i class="fas fa-play "></i>
+                    <button type="button" class="btn btn-outline-light btn-films__custom ps-4 pe-4">2:11:33</button>
+                    <h3>The Lord Of Rings</h3>
+                    <p>Tales of Middle-earth is a chronicle of the Great War for the Ring, a war that lasted more than
+                        one thousand years. The one who owned the Ring received power over all living creatures, but was
+                        obliged to serve evil...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Films page section fineshed-->
+
+    <!--Black window section-->
+    <section class="blackwindow">
+        <div class="container container-fluid">
+            <div class="row mt-5 ms-md-5">
+                <div class="col-md-6 blackwindow-left__img-custom">
+                    <img class="img-fluid mt-5" src="./images/balckwindow.png" alt="">
+                    <p>After the events at the Leipzig-Halle airport, Natasha was overtaken by the mistakes of the past.
+                        The Red Room again made itself felt - a program to create Widows - professional killers and
+                        spies - just like her. Natasha decides once and for all to deal with people whose efforts she
+                        herself became a Widow.</p>
+                    <button type="button" class="btn btn-main__watch-custom btn-lg mt-5 mb-5 ps-4 pe-4">
+                        Watch Now
+                    </button>
+                </div>
+                <div class="col-md-6 blackwindow-right__img-custom"></div>
+            </div>
+        </div>
+    </section>
+    <!--Black window section fineshed-->
+
+    <!--Collections page section-->
+    <section class="collections mt-5">
+        <div class="container container-fluid">
+            <h1 id="title-custom" class="mb-5">Collections</h1>
+            <hr style="color: #F18128; border: 2px solid #F18128; width: auto">
+            <div class="row">
+                <div class="col-sm-4 collections__img-custom">
+                    <a href="">
+                        <i class="fas fa-play"></i>
+                    </a>
+                    <h3 class="text-center">All Marvel Films</h3>
+                </div>
+                <div class="col-sm-4 collections__img-custom1">
+                    <a href="">
+                        <i class="fas fa-play"></i>
+                    </a>
+                    <h3 class="text-center">Fast and the Furious</h3>
+                </div>
+                <div class="col-sm-4 collections__img-custom2">
+                    <a href="">
+                        <i class="fas fa-play"></i>
+                    </a>
+                    <h3 class="text-center">Star Wars</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Collections page section fineshed-->
+
+    <!--Series page section-->
+    <section class="collections mb-5">
+        <div class="container container-fluid">
+            <h1 id="title-custom" class="mb-5">Series</h1>
+            <hr style="color: #F18128; border: 2px solid #F18128; width: auto;">
+            <div class="row series__img-custom mb-5">
+                <div class="col-sm-12">
+                    <h2 class="text-center">Game Of Thrones</h2>
+                    <p class="text-center">The time of prosperity is drawing to a close, and the summer, which lasted
+                        almost a decade, is
+                        dying away. Around the center of power of the Seven Kingdoms, the Iron Throne, a conspiracy is
+                        ripening, and during this difficult time, the king decides to seek support from his youth friend
+                        Eddard Stark. In a world where everyone - from the king to the mercenary - is eager for power,
+                        intrigues and is ready to stick a knife in the back, there is ...
+                    </p>
+                    <button type="button" class="btn btn-main__watch-custom series__btn-custom btn-lg ps-4 pe-4"
+                        style="margin-bottom: 90px;">Watch
+                        Now Online
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col series-below__img-custom me-5 mt-5">
+                    <a href="">
+                        <i class="fas fa-play"></i>
+                    </a>
+                    <h3 class="text-center" style="margin-bottom: 9rem;">All Marvel Films</h3>
+                </div>
+                <div class="col">
+                    <div class="row mt-5">
+                        <div class="col-sm-6 me-3 mb-3 series-below1__img-custom"><a href="">
+                                <i class="fas fa-play "></i>
+                            </a>
+                            <h3 class="text-center">The FLash</h3>
+                        </div>
+                        <div class="col-sm-6 me-3 mb-3 series-below2__img-custom"><a href="">
+                                <i class="fas fa-play"></i>
+                            </a>
+                            <h3 class="text-center">The Great</h3>
+                        </div>
+                        <div class="col-sm-6 me-3 mb-3 series-below3__img-custom"><a href="">
+                                <i class="fas fa-play"></i>
+                            </a>
+                            <h3 class="text-center">GOTHAM</h3>
+                        </div>
+                        <div class="col-sm-6 me-3 mb-3 series-below4__img-custom"><a href="">
+                                <i class="fas fa-play "></i>
+                            </a>
+                            <h3 class="text-center">The Witcher</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Series page section fineshed-->
+
+    <!--Footer page section-->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container container-fluid">
+            <section class="mb-5 pt-5">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Footer page section fineshed-->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>

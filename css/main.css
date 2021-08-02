@@ -1,0 +1,799 @@
+:root {
+    --oronge: #F18128 31%;
+    --black: #000 71%;
+    --darkblack: #070F19 80%;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.body {
+    background-color: #040D1F;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/*navbar section*/
+
+.nav-menu__custom {
+    display: block;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 10px;
+    color: white;
+}
+
+.nav-menu__custom:after
+.nav-menu__custom:before {
+    transition: all 1s;
+}
+
+.nav-menu__custom:hover {
+    color: #555;
+}
+
+/* stroke */
+.nav-menu__custom {
+  position: relative;
+}
+.nav-menu__custom:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.nav-menu__custom:hover:after {
+  width: 100%;
+}
+
+.nav-menu__custom {
+    transition: all 2s;
+}
+  
+.nav-menu__custom:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+.nav-menu__custom:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+.nav-menu__custom:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
+
+/*main page*/
+
+/* linear-gradient( rgba(7, 15, 25, 0.75) 75%,), */
+.main-page {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 5%, rgba(7, 15, 25, 0.75) 75% ),
+    url('../images/kong_skull_mainimg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.row h1 {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #fff;
+    text-align: left;
+    margin-top: 35%;
+}
+
+.row p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C8C8C8;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.row button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: fff;
+    text-align: left;
+}
+
+.btn-main__watch-custom {
+    background-color: #F18128;
+    color: black;
+}
+
+.btn-main__watch-custom:hover {
+    background-color: #040D1F;
+    color: white;
+}
+
+.btn-main__down-custom {
+    background-color: #040D1F;
+    color: white;
+}
+
+.btn-main__down-custom:hover {
+    background-color: #F18128;
+    color: black;
+}
+
+/*******Extra large devices only********/
+
+@media (min-width: 1200px) {
+
+}
+
+/*******Large devices only********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+        
+    }
+}
+
+/*******Medium devices only********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/*******Small devices only*********/
+@media (min-width: 576px) and (max-width: 768px) {
+    
+}
+
+/*******Small devices only********/
+
+@media (max-width: 575px) {
+    .row h1 {
+        font-style: bold;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 58px;
+        color: #fff;
+        text-align: left;
+        margin-top: 35%;
+    }
+}
+
+
+/*films section*/
+
+#title-custom {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #f18128;
+}
+
+.films-img__custom {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../images/Black_Panther.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 260px;
+    margin: 0 30px;
+    
+}
+
+.films-img__custom1 {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../images/Black_Panther_film_poster\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 260px;
+    margin: 0 30px;
+}
+.films-img__custom2 {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../images/Black_Panther_film_poster\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 260px;
+    margin: 0 30px;
+}
+.films-img__custom3 {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../images/Black_Panther_film_poster\ 4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 260px;
+    margin: 0 30px;
+}
+
+.fa-play {
+    font-size: 2.5rem;
+    margin: 3rem 6.5rem 1rem;
+}
+
+.btn-films__custom {
+    margin: 0 4.5rem;
+}
+
+.films div h3 {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #fff;
+}
+
+.films div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+.films div h3, .films div p {
+    text-align: center;
+}
+
+
+/*******Extra large devices only********/
+
+@media (min-width: 1200px) {
+
+}
+
+/*******Large devices only********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+        
+    }
+}
+
+/*******Medium devices only********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/*******Small devices only*********/
+@media (min-width: 576px) and (max-width: 768px) {
+    .films-img__custom {
+        
+        margin: 0 8rem;
+    }
+    
+    .films-img__custom1 {
+        
+        margin: 0 8rem;
+    }
+    .films-img__custom2 {
+        
+        margin: 0 8rem;
+    }
+    .films-img__custom3 {
+        
+        margin: 0 8rem;
+    }
+}
+
+/*******Small devices only********/
+
+@media (max-width: 575px) {
+    .row h1 {
+        font-style: bold;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 58px;
+        color: #fff;
+        text-align: left;
+        margin-top: 35%;
+    }
+
+    
+}
+
+/*black window section*/
+
+.blackwindow {
+    background-image: linear-gradient(90deg, rgba(222, 247, 255, 1) 0%, rgba(244, 252, 255, 1) 50.31%, rgba(255, 255, 255, 0) 100%), url(../images/Untitled.png);;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.blackwindow p {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    color: black;
+}
+
+/*collections section*/
+
+.title-custom {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #f18128;
+}
+
+.collections__img-custom {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../images/1_1RP9RobsLeCjQFBFt039Sw\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    margin: 50px 40px;
+}
+
+.collections__img-custom a i {
+    margin: 50px 150px 20px;
+}
+
+
+
+.collections__img-custom1 {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../images/1_1RP9RobsLeCjQFBFt039Sw\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    margin: 50px 40px;
+}
+
+.collections__img-custom1 a i {
+    margin: 50px 150px 20px;
+}
+
+
+
+.collections__img-custom2 {
+    background-image: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%), url(../images/1_1RP9RobsLeCjQFBFt039Sw\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    margin: 50px 40px;
+}
+
+.collections__img-custom2 a i {
+    margin: 50px 150px 20px;
+}
+
+
+
+/*******Extra large devices only********/
+
+@media (min-width: 1200px) {
+
+}
+
+/*******Large devices only********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+        
+    }
+}
+
+/*******Medium devices only********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/*******Small devices only*********/
+@media (min-width: 576px) and (max-width: 768px) {
+    .films-img__custom {
+        
+        margin: 0 8rem;
+    }
+    
+    .films-img__custom1 {
+        
+        margin: 0 8rem;
+    }
+    .films-img__custom2 {
+        
+        margin: 0 8rem;
+    }
+    .films-img__custom3 {
+        
+        margin: 0 8rem;
+    }
+
+
+
+    .collections__img-custom {
+        width: 300px;
+        margin: 50px 100px;
+    }
+    
+    .collections__img-custom a i {
+        margin: 50px 120px 20px;
+    }
+    
+   
+    
+    .collections__img-custom1 {
+        width: 300px;
+        margin: 50px 100px;
+    }
+    
+    .collections__img-custom1 a i {
+        margin: 50px 120px 20px;
+    }
+    
+    
+    
+    .collections__img-custom2 {
+        width: 300px;
+        margin: 50px 100px;
+    }
+    
+    .collections__img-custom2 a i {
+        margin: 50px 120px 20px;
+    }
+    
+    
+}
+
+/*******Small devices only********/
+
+@media (max-width: 575px) {
+    .row h1 {
+        font-style: bold;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 58px;
+        color: #fff;
+        text-align: left;
+        margin-top: 35%;
+    }
+
+    .collections__img-custom {
+        width: 300px;
+        margin: 50px 20px;
+    }
+    
+    .collections__img-custom a i {
+        margin: 50px 120px 20px;
+    }
+    
+    
+    
+    .collections__img-custom1 {
+        width: 300px;
+        margin: 50px 20px;
+    }
+    
+    .collections__img-custom1 a i {
+        margin: 50px 120px 20px;
+    }
+    
+    
+    
+    .collections__img-custom2 {
+        width: 300px;
+        margin: 50px 20px;
+    }
+    
+    .collections__img-custom2 a i {
+        margin: 50px 120px 20px;
+    }
+    
+}
+
+
+/*series page section*/
+
+.series__img-custom {
+    background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100% ), url(../images/2a443f7ae21fd8bab3c8a7e000aa2115\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.series__img-custom div h2 {
+    font-style: bold;
+    font-weight: 700;
+    line-height: 45px;
+    font-size: 40px;
+    color: white;
+    margin-top: 90px;
+
+}
+
+.series__img-custom div p {
+    font-family: sans-serif;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.series__btn-custom {
+    margin: 3rem 34rem;
+}
+
+.series-below__img-custom {
+    background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100% ), url(../images/scale_1200\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.series-below__img-custom a i {
+    margin: 9rem 18rem 3rem;
+}
+
+.series-below1__img-custom {
+    background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100% ), url(../images/download\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.series-below2__img-custom {
+    background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100% ), url(../images/trailer_143\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.series-below3__img-custom {
+    background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100% ), url(../images/gotem-4-sezon-2017-pic905-895x505-32510\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.series-below4__img-custom {
+    background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100% ), url(../images/960x540\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+./*******Extra large devices only********/
+
+@media (min-width: 1200px) {
+
+}
+
+/*******Large devices only********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+        
+    }
+}
+
+/*******Medium devices only********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/*******Small devices only*********/
+@media (min-width: 576px) and (max-width: 768px) {
+    .films-img__custom {
+        
+        margin: 0 8rem;
+    }
+    
+    .films-img__custom1 {
+        
+        margin: 0 8rem;
+    }
+    .films-img__custom2 {
+        
+        margin: 0 8rem;
+    }
+    .films-img__custom3 {
+        
+        margin: 0 8rem;
+    }
+
+
+
+    .collections__img-custom {
+        width: 300px;
+        margin: 50px 100px;
+    }
+    
+    .collections__img-custom a i {
+        margin: 50px 120px 20px;
+    }
+    
+   
+    
+    .collections__img-custom1 {
+        width: 300px;
+        margin: 50px 100px;
+    }
+    
+    .collections__img-custom1 a i {
+        margin: 50px 120px 20px;
+    }
+    
+    
+    
+    .collections__img-custom2 {
+        width: 300px;
+        margin: 50px 100px;
+    }
+    
+    .collections__img-custom2 a i {
+        margin: 50px 120px 20px;
+    }
+    
+    /*series*/
+    .series__btn-custom {
+        margin: 3rem 9rem;
+    }
+    
+    .series-below__img-custom a i {
+        margin: 9rem 15rem 3rem;
+    }
+    
+    .series-below1__img-custom {
+        margin: 0 7rem;
+    }
+    
+    .series-below2__img-custom {
+        margin: 0 7rem;
+
+    }
+    
+    .series-below3__img-custom {
+        margin: 0 7rem;
+
+    }
+    
+    .series-below4__img-custom {
+        margin: 0 7rem;
+
+    }
+
+}
+
+/*******Small devices only********/
+
+@media (max-width: 575px) {
+    .row h1 {
+        font-style: bold;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 58px;
+        color: #fff;
+        text-align: left;
+        margin-top: 35%;
+    }
+
+    .collections__img-custom {
+        width: 300px;
+        margin: 50px 20px;
+    }
+
+    .collections__img-custom a i {
+        margin: 50px 120px 20px;
+    }
+    
+    .collections__img-custom1 {
+        width: 300px;
+        margin: 50px 20px;
+    }
+    
+    .collections__img-custom1 a i {
+        margin: 50px 120px 20px;
+    }
+    
+    .collections__img-custom2 {
+        width: 300px;
+        margin: 50px 20px;
+    }
+    
+    .collections__img-custom2 a i {
+        margin: 50px 120px 20px;
+    }
+
+    /*series*/
+    .series__btn-custom {
+        margin: 3rem 3rem;
+    }
+
+    .series-below__img-custom a i {
+        margin: 9rem 8rem 3rem;
+    }
+    
+    .series-below1__img-custom {
+        width: 320px;
+        height: 200px;
+    }
+    
+    .series-below2__img-custom {
+        width: 320px;
+        height: 200px;
+    }
+    
+    .series-below3__img-custom {
+        width: 320px;
+        height: 200px;
+    }
+    
+    .series-below4__img-custom {
+        width: 320px;
+        height: 200px;
+    }
+
+    .series-below1__img-custom a i {
+        margin: 3rem 8rem 1rem;
+    }
+    
+    .series-below2__img-custom a i {
+        margin: 3rem 8rem 1rem;
+
+    }
+    
+    .series-below3__img-custom a i {
+        margin: 3rem 8rem 1rem;
+
+    }
+    
+    .series-below4__img-custom  a i  {
+        margin: 3rem 8rem 1rem;
+
+    }
+}
